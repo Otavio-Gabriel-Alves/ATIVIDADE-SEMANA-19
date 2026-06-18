@@ -1,0 +1,118 @@
+main {
+    padding-top: 64px;
+    min-height: calc(100vh - 200px);
+}
+
+main section {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form table td {
+    padding: 10px 8px;
+    vertical-align: middle;
+}
+
+form table td:first-child {
+    width: 200px;
+    font-family: 'Oswald', sans-serif;
+    font-size: .85rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #BBBBBB;
+    white-space: nowrap;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    background: #1E1E1E;
+    border: 1px solid #3A3A3A;
+    color: #F5F5F5;
+    font-family: 'Inter', sans-serif;
+    font-size: .9rem;
+    padding: 10px 14px;
+    outline: none;
+    transition: border-color .2s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #C9A84C;
+}
+
+form select option {
+    background: #1E1E1E;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form td[colspan="2"] {
+    padding-top: 16px;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    accent-color: #C9A84C;
+}
+
+form button {
+    font-family: 'Oswald', sans-serif;
+    font-size: .85rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: #0A0A0A;
+    background: #C9A84C;
+    border: none;
+    padding: 14px 36px;
+    cursor: pointer;
+    transition: background .25s, transform .2s;
+    margin-top: 8px;
+}
+
+form button:hover {
+    background: #E8C96A;
+    transform: translateY(-2px);
+}
+
+#resultado {
+    margin-top: 40px;
+    padding: 28px 32px;
+    background: #1E1E1E;
+    border-left: 3px solid #C9A84C;
+    display: none;
+}
+
+#resultado.ativo {
+    display: block;
+}
+
+#resultado h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #C9A84C;
+    margin-bottom: 16px;
+}
+
+#resultado p {
+    font-size: .88rem;
+    color: #BBBBBB;
+    line-height: 1.8;
+}
+
+#resultado p strong {
+    color: #F5F5F5;
+}
